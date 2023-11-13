@@ -1,0 +1,8 @@
+digraph BA {
+	S0 [shape=circle]
+	S1 [shape=doublecircle]
+
+	S0->S1 [label="{T0,}"]
+	S0->S0 [label="true"]
+	S1->S1 [label="true"]
+}

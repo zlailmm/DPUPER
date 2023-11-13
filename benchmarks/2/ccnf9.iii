@@ -1,0 +1,52 @@
+void reach_error(){}
+void abort(){}
+
+
+
+
+
+
+
+extern void abort(void);
+void reach_error(){}
+void assume_abort_if_not(int cond) {
+    if(!cond) {abort();}
+}
+
+
+
+
+
+
+void assert(int cond){
+    if(!cond) {abort();}
+}
+
+
+
+
+int a=0;
+int b=0;
+int c=0;
+int d=0;
+
+void *t1(void *arg){a=1;}
+void *t2(void *arg){a=2;}
+void *t3(void *arg){b=1;}
+void *t4(void *arg){b=2;}
+void *t5(void *arg){c=1;}
+void *t6(void *arg){c=2;}
+void *t7(void *arg){d=1;}
+void *t8(void *arg){d=2;}
+
+int main()
+{
+  pthread_create(id1, 0, t1, 0);
+  pthread_create(id2, 0, t2, 0);
+  pthread_create(id3, 0, t3, 0);
+  pthread_create(id4, 0, t4, 0);
+  pthread_create(id5, 0, t5, 0);
+  pthread_create(id6, 0, t6, 0);
+  pthread_create(id7, 0, t7, 0);
+  pthread_create(id8, 0, t8, 0);
+}

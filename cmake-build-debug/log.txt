@@ -1,0 +1,15 @@
+
+current file: ../test_programs/0_3bro.iii
+formula:1
+
+
+
+current file: ../test_programs/0_3bro.iii
+formula:1
+
+
+
+current file: ../benchmarks/2/ccnf9.iii
+formula:1
+
+
